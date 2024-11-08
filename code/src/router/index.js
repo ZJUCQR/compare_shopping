@@ -2,12 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import register from '../components/register.vue';
 import login from '../components/login.vue';
 import welcome from '../components/welcome.vue';
-
+import compare from '../components/compare.vue';
 const routes = [
      {
           path: '/',
           name: 'home',
-          redirect: '/login'
+          component: welcome,
      },
      {
           path: '/register',
@@ -23,6 +23,11 @@ const routes = [
           path: '/welcome',
           name: 'welcome',
           component: welcome,
+     },
+     {
+          path: '/compare',
+          name: 'compare',
+          component: compare,
      },
 ];
 

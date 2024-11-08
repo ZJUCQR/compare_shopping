@@ -64,7 +64,7 @@ export default {
         });
 
         localStorage.setItem('token', response.data.access_token);
-        this.$router.push('/welcome');
+        this.$router.push('/compare');
       } catch (error) {
         this.popupMessage = '用户名或密码错误';  // 设置弹出框内容
         this.showPopup = true;  // 显示弹出框
