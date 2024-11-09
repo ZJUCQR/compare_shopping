@@ -115,7 +115,7 @@ export default {
         }, 1500);  // 延迟1.5秒后跳转
 
       } catch (error) {
-        this.popupMessage = `"该用户名或密码已被占用，请选择其他用户名。"`;  // 错误提示
+        this.popupMessage = `"该用户名或邮箱已被占用。"`;  // 错误提示
         this.showPopup = true;  // 显示弹出框
       }
     },
