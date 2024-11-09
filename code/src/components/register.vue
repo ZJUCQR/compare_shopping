@@ -11,7 +11,7 @@
       <h2>注册</h2>
       <form @submit.prevent="registerUser">
         <div>
-          <label>用户名:</label>
+          <label>新用户名:</label>
           <input v-model="username" type="text" required />
         </div>
         <div>
